@@ -1,0 +1,37 @@
+.navbar-brand {
+    margin-right: 0px;
+}
+
+.cart {
+    position: relative;
+}
+
+#cart-score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: #dc3545;
+    position: absolute;
+    color: white;
+    top: 15px;
+    left: 15px;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.mini-cart {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    background-color: white;
+    /* color: white; */
+    z-index: 2;
+    border: solid black 2px;
+}
+
+.cart:hover .mini-cart {
+    display: block;
+}

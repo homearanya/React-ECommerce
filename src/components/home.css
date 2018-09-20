@@ -1,0 +1,6 @@
+@media only screen and (min-width: 576px) {
+    #shopButton {
+        margin-top: -40px;
+        position: relative;
+    }
+}

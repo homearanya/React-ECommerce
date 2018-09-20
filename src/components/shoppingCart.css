@@ -1,0 +1,32 @@
+.img-cart {
+    max-height: 50px;
+    max-width: 50px;
+}
+
+table {
+    margin-bottom: 20px;
+}
+
+td,
+th {
+    padding: 5px 5px;
+    font-size: 0.75em;
+}
+
+form {
+    margin-bottom: 30px;
+}
+
+#cart-form input[type="text"] {
+    width: 100%;
+    padding: 10px 10px;
+    margin: 0px auto 10px auto;
+}
+
+@media only screen and (min-width: 576px) {
+    td,
+    th {
+        padding: 5px 10px;
+        font-size: 1em;
+    }
+}

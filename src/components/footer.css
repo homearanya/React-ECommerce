@@ -1,0 +1,33 @@
+footer {
+    margin-top: 30px;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: .25rem;
+}
+
+p#backToTop {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    -webkit-transition: background-color .4s linear, color .4s linear;
+    -o-transition: background-color .4s linear, color .4s linear;
+    transition: background-color .4s linear, color .4s linear;
+    color: #1abc9c;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+p#backToTop:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+@media only screen and (min-width: 576px) {
+    #backToTop {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+}

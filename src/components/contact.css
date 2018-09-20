@@ -1,0 +1,62 @@
+#contact-page h2 {
+    margin-bottom: 30px;
+}
+
+#contact-form input[name="name"],
+#contact-form input[name="email"] {
+    width: 100%;
+}
+
+#contact-form input[name="subject"],
+#contact-form textarea[name="message"] {
+    width: 100%;
+}
+
+#contact-form textarea[name="message"] {
+    height: 200px;
+}
+
+#contact-form input {
+    margin-bottom: 20px;
+}
+
+#contact-form input[type="radio"] {
+    margin-right: 5px;
+}
+
+#contact-form input[name="social"] {
+    margin-top: 15px;
+}
+
+#contact-form label {
+    font-weight: 600;
+}
+
+.address-container {
+    display: flex;
+    justify-content: left;
+}
+
+#contact-page .address {
+    margin-left: 20px;
+}
+
+#contact-page .telephone {
+    margin-left: 52px;
+}
+
+#contact-page .email {
+    margin-left: 34px;
+}
+
+.fullName {
+    padding-left: 0px;
+}
+
+@media only screen and (min-width: 576px) {
+    #contact-details {
+        padding-top: 16px;
+        border: 1px solid black;
+        height: 100%;
+    }
+}
