@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import shoppingcart from './shoppingcart.svg';
-import logo from './WideWorldImportersLogo.png';
+import shoppingcart from '../images/shoppingcart.svg';
+import logo from '../images/WideWorldImportersLogo.png';
 import './header.css';
 
 const MiniCart = (props) => {

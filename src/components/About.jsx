@@ -4,6 +4,10 @@ import './about.css';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
+import ourValuesImg from '../images/values2016_enweb_0-min.png';
+import ourEnvironmentImg from '../images/Newsitem-Checkout-environment-to-enjoy-min.jpg';
+import ourPeopleImg from '../images/Our People-min.jpg';
+
 
 class WheninView extends Component {
     constructor(props) {
@@ -269,7 +273,7 @@ export default class About extends Component {
                     componentClasses="container-fluid col-lg-6 mobilevec mobilevecone"
                     className1={['animate one fadeInLeft']}
                     className2="right-mobile img-fluid"
-                    src="http://www.carmeuseoverseas.com/sites/default/files/values2016_enweb_0.png"
+                    src={ourValuesImg}
                 />
                 <Section2Right
                     text=
@@ -290,7 +294,8 @@ export default class About extends Component {
                     componentClasses="container-fluid col-lg-6 mobilevec mobilevectwo"
                     className1={['animate one fadeInRight']}
                     className2="right-mobile2 img-fluid"
-                    src="http://www.checkouts.eu/Files/Images/NewsImages/Newsitem-Checkout-environment-to-enjoy.jpg" />
+                    src={ourEnvironmentImg}
+                />
                 <Section2Left
                     text=
                     {
@@ -310,7 +315,7 @@ export default class About extends Component {
                     componentClasses="container-fluid col-lg-6 mobilevec mobilevecthree"
                     className1={['animate one fadeInLeft']}
                     className2="right-mobile3 img-fluid"
-                    src="http://www.rrdonnelley.co.uk/sites/default/files/2016-02/Our%20People.jpg"
+                    src={ourPeopleImg}
                 />
                 <TestimonialsContainer />
                 <CTAbox />
