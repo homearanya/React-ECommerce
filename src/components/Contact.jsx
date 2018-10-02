@@ -74,7 +74,17 @@ class ContactForm extends Component {
                         </div>
                     </div>
                     <label htmlFor="subject">Subject</label> <br />
-                    <input name="subject" id="subject" type="text" value={this.state.subject} onChange={this.handleChange} /> <br />
+                    <select name="subject" id="subject" value={this.state.subject} onChange={this.handleChange}>
+                        <option value="delivery">Delivery</option>
+                        <option value="returns">Returns</option>
+                        <option value="refunds">Refunds</option>
+                        <option value="orders">Orders Issues</option>
+                        <option value="payments">Payments</option>
+                        <option value="products">Products and Stock</option>
+                        <option value="technical">Technical</option>
+                    </select>
+                    <br />
+                    {/* <input name="subject" id="subject" type="text" value={this.state.subject} onChange={this.handleChange} /> <br /> */}
                     <label htmlFor="message">Message</label> <br />
                     <textarea name="message" id="message" type="text" value={this.state.message} onChange={this.handleChange} /> <br />
                     <input type="submit" value="Send" className="btn btn-primary btn-md float-right mt-2" />
