@@ -14,7 +14,7 @@ export default class Footer extends Component {
                     <div className="container">
                         <div className="text-center position-relative">
                             <p>
-                                <Link to="/about" >About</Link> -    <Link to="/contact">Contact</Link>
+                                <Link to="/" >Home</Link> -    <Link to="/about" >About</Link> -    <Link to="/contact">Contact</Link>
                             </p>
                             <p>info@wwimporters.co.za</p>
                             <p>&copy; Copyright 2018 - Wide World Importers</p>

@@ -94,7 +94,9 @@ class Product extends Component {
     handleChange(event) {
         this.setState({ quantity: event.target.value });
     }
-
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
     componentDidUpdate() {
         if (this.props.appData.length > 0 && !this.props.product) {
             this.productFound = findProduct(this.props.appData, this.props.match.params.name)

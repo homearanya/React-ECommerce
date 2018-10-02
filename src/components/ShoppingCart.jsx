@@ -180,22 +180,27 @@ class OrderForm extends Component {
         )
     }
 }
-const ShoppingCart = (props) => {
-    return (
-        <div className="container">
-            <h1 className="mb-3 text-center">SHOPPING CART</h1>
-            <div className="row">
-                <Order
-                    shoppingCart={props.shoppingCart}
-                    deleteItem={props.deleteItem}
-                    updateItem={props.updateItem}
-                />
-                <OrderForm
-                    numItems={props.shoppingCart.length}
-                />
-            </div>
-        </div>
-    );
-};
 
-export default ShoppingCart;
+
+export default class ShoppingCart extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
+    render() {
+        return (
+            <div className="container">
+                <h1 className="mb-3 text-center">SHOPPING CART</h1>
+                <div className="row">
+                    <Order
+                        shoppingCart={this.props.shoppingCart}
+                        deleteItem={this.props.deleteItem}
+                        updateItem={this.props.updateItem}
+                    />
+                    <OrderForm
+                        numItems={this.props.shoppingCart.length}
+                    />
+                </div>
+            </div>
+        )
+    }
+}
